@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        #main{
+            background-color: white;
+            margin: 450px;
+            padding: 10px;
+            display: grid;
+            font-size: 50px;
+           /* width: 700px;*/
+            /*grid-template-columns: auto auto auto;*/
+            grid-template-areas:'A A A A' 'B B C D' 'E F G H' 'I J K L' 'M N O P' 'Q Q R P';
+        }
+        .sub{
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 2px;
+            color: white;
+            text-align: center;
+        }
+        .sub{
+            color: orangered;
+            font-family: sans-serif;    
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="sub" style="grid-area: A; color: white; background-color: orange;">25</div>
+        <div class="sub" style="grid-area: B; color: white; background-color: lightskyblue;">clear</div>
+        <div class="sub" style="grid-area: C;">-</div>
+        <div class="sub" style="grid-area: D;">+</div>
+        <div class="sub" style="grid-area: E;">7</div>
+        <div class="sub" style="grid-area: F;">8</div>
+        <div class="sub" style="grid-area: G;">9</div>
+        <div class="sub" style="grid-area: H;">/</div>
+        <div class="sub" style="grid-area: I;">4</div>
+        <div class="sub" style="grid-area: J;">5</div>
+        <div class="sub" style="grid-area: K;">6</div>
+        <div class="sub" style="grid-area: L;">x</div>
+        <div class="sub" style="grid-area: M;">1</div>
+        <div class="sub" style="grid-area: N;">2</div>
+        <div class="sub" style="grid-area: O;">3</div>
+        <div class="sub" style="grid-area: P; color: white; background-color: red; padding-top: 70px;">=</div>
+        <div class="sub" style="grid-area: Q;">0</div>
+        <div class="sub" style="grid-area: R;">.</div>   
+    </div>
+</body>
+</html>
